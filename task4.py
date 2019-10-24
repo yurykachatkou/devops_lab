@@ -10,4 +10,3 @@ for i in range(N):
         res[i] = InStr[0]
 
 print(max(res, key=res.get)+1)
-
