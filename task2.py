@@ -39,4 +39,3 @@ else:
 res = int(newA) - int(newB)
 
 print(res)
-
