@@ -9,4 +9,4 @@ for i in range(N):
     if InStr[1] == "1":
         res[i] = InStr[0]
 
-print(max(res, key=res.get)+1)
+print(max(res, key=res.get) + 1)

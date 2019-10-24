@@ -11,7 +11,7 @@ for i in range(M):
 
 # check if each pair of Ip-addresses belong to each mask
 for i in range(M):
-    Ip1, Ip2 = map(str,ip[i].split())
+    Ip1, Ip2 = map(str, ip[i].split())
     IpCount = 0
     # checking if a pair of Ip belongs to the same subnet
     for mask in masks:
@@ -28,5 +28,3 @@ for i in range(M):
         if Net1 == Net2:
             IpCount += 1
     print(IpCount)
-
-

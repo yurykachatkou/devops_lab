@@ -1,4 +1,4 @@
-x,y = map(int,input().split())
+x, y = map(int, input().split())
 # Find different bits
 z = x ^ y
 # Count the number of different bits
@@ -9,4 +9,3 @@ while z > 0:
     z >>= 1
 
 print(bits)
-

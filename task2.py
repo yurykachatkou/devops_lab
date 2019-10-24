@@ -1,4 +1,4 @@
-A, B = map(int,input().split())
+A, B = map(int, input().split())
 
 # if A is negative - find the smallest number.
 if "-" in str(A):
@@ -15,14 +15,14 @@ if "-" in str(A):
     newA = "-" + tmp + "".join(listA)
 # if A is positive - find the largest number
 else:
-    newA = "".join(sorted(list(str(A)),reverse=True))
+    newA = "".join(sorted(list(str(A)), reverse=True))
 
 # if B is negative - find the largest number.
 if "-" in str(B):
     # strip minus
     B = str(B)[1:]
     listB = list(B)
-    newB = "-" + "".join(sorted(listB,reverse=True))
+    newB = "-" + "".join(sorted(listB, reverse=True))
 # if B is positive - find the largest number.
 else:
     B = str(B)
