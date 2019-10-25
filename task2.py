@@ -1,7 +1,7 @@
 A, B = map(int, input().split())
 
-# if A is negative - find the smallest number.
-if "-" in str(A):
+# if A is negative - find the smallest positive number.
+if A < 0:
     # strip minus
     A = str(A)[1:]
     # sort listA
@@ -17,13 +17,13 @@ if "-" in str(A):
 else:
     newA = "".join(sorted(list(str(A)), reverse=True))
 
-# if B is negative - find the largest number.
-if "-" in str(B):
+# if B is negative - find the largest positive number.
+if B < 0:
     # strip minus
     B = str(B)[1:]
     listB = list(B)
     newB = "-" + "".join(sorted(listB, reverse=True))
-# if B is positive - find the largest number.
+# if B is positive - find the smallest positive number
 else:
     B = str(B)
     # sort listB
