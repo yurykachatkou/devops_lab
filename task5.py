@@ -1,4 +1,4 @@
-InStr = str(input())
+InStr = input()
 x = {}
 
 for k in InStr:
