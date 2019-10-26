@@ -4,6 +4,7 @@ from time import gmtime, strftime
 import psutil
 import json
 
+
 class CompInfo:
 
     def __init__(self):
@@ -40,8 +41,7 @@ def WriteToJson(file, timer):
 
         cinfo = CompInfo()
 
-        data['SNAPSHOT ' + str(i + 1) + ": " +
-             strftime("%Y-%m-%d %H:%M:%S", gmtime())] = {
+        data['SNAPSHOT ' + str(i + 1) + ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime())] = {
             "Cpu Load": str(cinfo.cpuload()) + "%",
             "Memory usage": str(cinfo.memus()) + "mb",
             "Virtual Memory Usage": str(cinfo.vmemus()) + "mb",
@@ -62,7 +62,8 @@ def WriteToFile(file, timer):
     while True:
         fileTxt = open(file, "a+")
         cinfo = CompInfo()
-        fileTxt.write('SNAPSHOT ' + str(i + 1) + ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + ":\r\n")
+        fileTxt.write('SNAPSHOT ' + str(i + 1) +
+                      ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + ":\r\n")
         fileTxt.write("\t\t\t Cpu Load: %s\r\n" % str(cinfo.cpuload()))
         fileTxt.write("\t\t\t Memory usage: %s mb\r\n " % str(cinfo.memus()))
         fileTxt.write("\t\t\t Virtual memory usage: %s mb\r\n" % str(cinfo.vmemus()))
