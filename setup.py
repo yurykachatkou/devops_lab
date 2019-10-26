@@ -12,3 +12,4 @@ setup(
     author_email="author@example.com",
     description="Snapshot app",
 )
+

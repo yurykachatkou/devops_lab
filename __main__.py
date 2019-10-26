@@ -11,3 +11,4 @@ if __name__ == "__main__":
 
     elif data["Common"]["output"] == "txt":
         WriteToFile("devops_lab/data.txt", data["Common"]["interval"])
+
