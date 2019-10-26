@@ -62,8 +62,8 @@ def WriteToFile(file, timer):
     while True:
         fileTxt = open(file, "a+")
         cinfo = CompInfo()
-        fileTxt.write('SNAPSHOT ' + str(i + 1) + \
-                      ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + ":\r\n")
+        fileTxt.write('SNAPSHOT ' + str(i + 1)
+                      + ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + ":\r\n")
         fileTxt.write("\t\t\t Cpu Load: %s\r\n" % str(cinfo.cpuload()))
         fileTxt.write("\t\t\t Memory usage: %s mb\r\n " % str(cinfo.memus()))
         fileTxt.write("\t\t\t Virtual memory usage: %s mb\r\n" % str(cinfo.vmemus()))
