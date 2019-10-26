@@ -40,7 +40,8 @@ def WriteToJson(file, timer):
 
         cinfo = CompInfo()
 
-        data['SNAPSHOT ' + str(i + 1) + ": " + strftime("%Y-%m-%d %H:%M:%S", gmtime())] = {
+        data['SNAPSHOT ' + str(i + 1) + ": " +
+             strftime("%Y-%m-%d %H:%M:%S", gmtime())] = {
             "Cpu Load": str(cinfo.cpuload()) + "%",
             "Memory usage": str(cinfo.memus()) + "mb",
             "Virtual Memory Usage": str(cinfo.vmemus()) + "mb",
