@@ -35,7 +35,7 @@ To run application type `python devops_lab`.
 
 #### Output Examples
 
-####Json
+####Plain Text
 
 ![Image](/images/txt.png)
 
