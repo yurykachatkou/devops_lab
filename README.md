@@ -23,7 +23,7 @@ The information will be written to txt or jsont file(need to specify in config.j
 Wheel-package is in `devops_lab` directory.  
 To install use
 
-`pip install pip install devops_lab/`
+`pip install devops_lab/`
 
 
 #### Usage
