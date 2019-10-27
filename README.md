@@ -20,17 +20,17 @@ The information will be written to txt or jsont file(need to specify in config.j
 
 #### Installation
 
-Wheel-package is in `devops_lab` directory.  
+The package is in `devops_lab` directory.  
 To install use
 
-`pip install devops_lab/`
+`pip install devops_lab/ --user` or inside devops_lab `pip install . --user`
 
 
 #### Usage
 
-`$ python devops_lab`
 
-To run application type `python devops_lab`.  
+To run application type `python -m snapshot `.
+To abort gathering information - press Ctrl+C
 
 
 #### Output Examples
