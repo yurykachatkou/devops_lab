@@ -72,4 +72,3 @@ def WriteToFile(file, timer):
         fileTxt.close()
         i += 1
         time.sleep(timer * 60)
-
