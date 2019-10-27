@@ -1,7 +1,7 @@
 config = {
-	"Common":
-	{
-		"output": "json",
-		"interval": 5
-	}
+    "Common":
+    {
+        "output": "json",
+        "interval": 5
+    }
 }
