@@ -1,5 +1,4 @@
 #!/usr/bin/env pytho
-import json
 from snapshot.snapshot import WriteToFile, WriteToJson
 from snapshot import config
 
@@ -12,4 +11,3 @@ if __name__ == "__main__":
 
     elif filetype == "txt":
         WriteToFile("data.txt", interval)
-
