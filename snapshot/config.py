@@ -5,4 +5,3 @@ config = {
 		"interval": 5
 	}
 }
-
