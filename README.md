@@ -1,44 +1,39 @@
-###### Snapshot
+###### PrStats
 
-###### Version 1.0
+###### Version 1.1
 
 ###### Description
 
-Simple python app which monitor the system and output information in the plain text file and  json file (configurable in config.json).
-
-#### Gathered information
-
-The application will gather the follow information:  
-  - CPU usage (percent);  
-  - physical disk used and total Mbytes;  
-  - virtual memory used and total Mbytes;  
-  - input/ouput disk operations;  
-  - network sent/received Mbytes.  
-
-The information will be written to txt or jsont file(need to specify in config.json)
-
-
-#### Installation
-
-The package is in `devops_lab` directory.  
-To install use
-
-`pip install devops_lab/ --user` or inside devops_lab `pip install . --user`
-
+Simple python app to get information about pull requests
 
 #### Usage
 
 
-To run application type `python -m snapshot `.
-To abort gathering information - press Ctrl+C
+usage: `python prstats.py [-h] -ow OWNER -r REPO [-u USER] [-op OPTION] [-v]`
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -ow OWNER, --owner OWNER
+                        Owner of a repository
+  -r REPO, --repo REPO  Name of a repository
+  -u USER, --user USER  Info for user who made pull requests. If not
+                        specified, info for all users will be outputted
+  -op OPTION, --option OPTION
+                        Input options: 
+			"state" - to get a state of PR,
+			"title" - to get PR title,
+	                "id" - to get id of PR,
+			"day" - to get a day of the week PR was opened,
+			"weeks" - to get a week number, PR was opened,
+			"title" - to get a title of PR.
+			If not specified, all option will be
+                        outputted
+  -v                    show program's version number and exit
 
 
 #### Output Examples
 
-#### Plain Text
 
-![Image](/images/txt.png)
+![Image](/images/prstats.png)
 
-#### Json
 
-![Image](/images/json.png)
