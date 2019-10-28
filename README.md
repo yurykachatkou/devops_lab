@@ -20,12 +20,12 @@ optional arguments:
                         specified, info for all users will be outputted
   `-op OPTION, --option OPTION`
                         Input options: 
-			"state" - to get a state of PR,
-			"title" - to get PR title,
-	                "id" - to get id of PR,
-			"day" - to get a day of the week PR was opened,
-			"weeks" - to get a week number, PR was opened,
-			"title" - to get a title of PR.
+			`state` - to get a state of PR,
+			`title` - to get PR title,
+	                `id` - to get id of PR,
+			`day` - to get a day of the week PR was opened,
+			`weeks` - to get a week number, PR was opened,
+			`title` - to get a title of PR.
 			If not specified, all option will be
                         outputted
   `-v`                    show program's version number and exit
