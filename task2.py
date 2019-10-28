@@ -13,16 +13,21 @@ if A < 0:
             break
     # add the digit from tmp to sorted listA
     newA = "-" + tmp + "".join(listA)
+
+elif A == 0:
+    newA = 0
 # if A is positive - find the largest number
 else:
     newA = "".join(sorted(list(str(A)), reverse=True))
-
 # if B is negative - find the largest positive number.
 if B < 0:
     # strip minus
     B = str(B)[1:]
     listB = list(B)
     newB = "-" + "".join(sorted(listB, reverse=True))
+
+elif B == 0:
+    newB = 0
 # if B is positive - find the smallest positive number
 else:
     B = str(B)
