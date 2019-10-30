@@ -5,6 +5,7 @@ import pkg_resources
 import json
 import yaml
 import subprocess
+import site
 
 ver = sys.version[0:5]
 venvname = str(os.environ.get('VIRTUALENV')).split("/")[-1]
@@ -17,7 +18,8 @@ packages = []
 for i in pkg_resources.working_set:
     packages.append(
         "Name: " + i.project_name + ",'Version: " + i.version)
-location = i.location
+
+location = "".join(site.getsitepackages())
 
 verdata = subprocess.Popen(['pyenv', 'versions'], stdout=subprocess.PIPE)
 versions = verdata.stdout.read()
