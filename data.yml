@@ -1,0 +1,11 @@
+apache_vhosts:
+- servername: centos1
+  documentroot: /www/docs/test1
+  serveradmin: www-admin@192.168.56.155
+  directorypath: /home/student/test1
+  port: 80
+- servername: centos2
+  documentroot: /www/docs/test1
+  serveradmin: www-admin@192.168.56.156
+  directorypath: /home/student/test1
+  port: 8080
